@@ -5,6 +5,7 @@
       <span class="title">{{pageTitle}}</span>
       <span class="line-v"></span>
     </header>
+    <TodoList/>
     <ShoppingCart
       :message="total"
       @change="changeCount">
@@ -17,6 +18,7 @@
 
 <script type="text/javascript">
   import ShoppingCart from './components/ShoppingCart'
+  import TodoList from './components/TodoList'
 
   export default {
     name: 'app',
@@ -27,7 +29,8 @@
       }
     },
     components: {
-      ShoppingCart
+      ShoppingCart,
+      TodoList
       // ShoppingCart： {
       //   template: '<ShoppingCart/>',
       //   compoments: {ShoppingCart}
